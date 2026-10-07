@@ -515,12 +515,12 @@ Copilot CLI supports multiple AI models from OpenAI, Anthropic, Google, and othe
 copilot
 > /model
 
-# Shows available models and lets you pick one. Select Sonnet 4.5.
+# Shows available models and lets you pick one. Examples: GPT-6 Sol, GPT-6 Luna, Claude Sonnet 5.5, Claude Opus 5.5.
 ```
 
 > 💡 **Session vs. persistent model**: The `/model` command changes the model for the **current session only**. When you start a new session, Copilot will use the default again. To set a permanent default model for all future sessions, use `/config model` instead.
 
-> 💡 **Tip**: Some models cost more "premium requests" than others. Models marked **1x** (like Claude Sonnet 4.5) are a great default. They're capable and efficient. Higher-multiplier models use your premium request quota faster, so save those for when you really need them.
+> 💡 **Tip**: Copilot CLI usage is measured in **GitHub AI Credits**. The number of credits used depends on the model you select and how many tokens the task consumes. More capable models may cost more, so use lighter models for routine tasks and save powerful reasoning models for complex work. Run `/usage` to see how many AI credits your current session has used.
 
 > 💡 **Not sure which model to pick?** Select **`Auto`** from the model picker to let Copilot automatically choose the best available model for each session. This is a great default if you're just getting started and don't want to think about model selection.
 

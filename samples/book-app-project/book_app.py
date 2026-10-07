@@ -26,6 +26,11 @@ def handle_list():
     show_books(books)
 
 
+def handle_list_unread() -> None:
+    books = collection.get_unread_books()
+    show_books(books)
+
+
 def handle_add():
     print("\nAdd a New Book\n")
 
@@ -64,6 +69,7 @@ def show_help():
 Book Collection Helper
 
 Commands:
+  list-unread - Show only unread books
   list     - Show all books
   add      - Add a new book
   remove   - Remove a book by title
@@ -81,6 +87,8 @@ def main():
 
     if command == "list":
         handle_list()
+    elif command == "list-unread":
+        handle_list_unread()
     elif command == "add":
         handle_add()
     elif command == "remove":
